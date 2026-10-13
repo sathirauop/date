@@ -19,7 +19,7 @@ You can also edit `PLACES` and the apology text in `site/index.html`.
 
 Preview locally: just double-click `site/index.html`.
 
-## 2. Host it free on GitHub Pages
+## 2. Host it free on GitHub Pagess
 
 ```bash
 git init -b main
