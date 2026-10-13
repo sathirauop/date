@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>For You 💌</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💖</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+
+  <main>
+    <!-- Page 1: the apology -->
+    <section class="page active" id="page-sorry">
+      <div class="card">
+        <div class="big-emoji bounce">🥺</div>
+        <h1>Hey <span data-her-name></span>,</h1>
+        <p class="lead">I'm really, truly sorry.</p>
+        <p>
+          For everything I said, everything I didn't say, and every moment I made you
+          feel anything less than the amazing person you are. You mean the world to me,
+          and I want to make it up to you.
+        </p>
+        <p class="question">
+          So&hellip; will you let me take you out on a
+          <strong>dinner date tonight</strong>? 🍽️💕
+        </p>
+        <div class="buttons" id="buttons">
+          <button type="button" id="yesBtn" class="btn yes">Yes 💖</button>
+          <button type="button" id="noBtn" class="btn no" tabindex="-1">No</button>
+        </div>
+        <p class="signature">— <span data-your-name></span></p>
+      </div>
+    </section>
+
+    <!-- Page 2: choose the place -->
+    <section class="page" id="page-choose">
+      <div class="card wide">
+        <div class="big-emoji">🥰</div>
+        <h1>Yaaay, you said yes!</h1>
+        <p class="lead">Now the important part&hellip; where shall we go tonight?</p>
+
+        <div class="places" id="places"></div>
+        <div class="other-wrap hidden" id="otherWrap">
+          <input id="otherInput" type="text" maxlength="80" placeholder="Tell me where 💭">
+        </div>
+
+        <h2>Anything else? <span class="muted">(optional)</span></h2>
+        <textarea id="note" rows="3" maxlength="500"
+          placeholder="Cravings, dress code, a little message for me..."></textarea>
+
+        <p class="error hidden" id="error"></p>
+        <button type="button" id="confirmBtn" class="btn yes big">It's a date! 💌</button>
+      </div>
+    </section>
+
+    <!-- Page 3: done -->
+    <section class="page" id="page-done">
+      <div class="card">
+        <div class="big-emoji beat">💖</div>
+        <h1>It's a date!</h1>
+        <p class="lead" id="summary"></p>
+        <p>
+          Thank you for giving me another chance. I promise to make tonight special.
+          Get ready, beautiful — I'll see you soon. 😘
+        </p>
+        <p class="fallback hidden" id="fallback">
+          (Psst… my little messenger got lost 🙈 Please screenshot this and send it to me!)
+        </p>
+        <a id="waBtn" class="btn wa hidden" target="_blank" rel="noopener">Send it to me on WhatsApp too 💬</a>
+        <p class="signature">— <span data-your-name></span></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
